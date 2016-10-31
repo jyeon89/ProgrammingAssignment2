@@ -2,7 +2,9 @@
 ## description of what your functions do
 
 ## Write a short comment describing this function
-## It caches the input values.
+## 'x' is a square invertible matrix.
+## It sets and gets the matrix. 
+## Then it sets and gets the inverse of it.
 
 makeCacheMatrix <- function(x = matrix()) {
       inv <- NULL
@@ -21,7 +23,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-## It used the cached data to get the inverse matrix.
+## 'x' is the output of makeCacheMatrix().
+## It does the actual calculation 
+## to get the inverse of the original matrix.
             
 cacheSolve <- function(x, ...) {
       ## Return a matrix that is the inverse of 'x'
